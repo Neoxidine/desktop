@@ -1,8 +1,7 @@
 import { observer } from 'mobx-react';
 import * as React from 'react';
 
-import Ripple from '~/renderer/components/Ripple';
-import { transparency } from '~/renderer/constants/transparency';
+import Ripple from '../../../components/Ripple';
 import { Button, Icon, Circle } from './style';
 
 interface Props {
@@ -25,7 +24,7 @@ interface Props {
 @observer
 export default class UserIcon extends React.Component<Props, {}> {
   public static defaultProps = {
-    size: 38
+    size: 38,
   };
 
   private ripple = React.createRef<Ripple>();
@@ -98,12 +97,7 @@ export default class UserIcon extends React.Component<Props, {}> {
           opacity={opacity}
         />
         <Circle>
-          <Ripple
-            ref={this.ripple}
-            color="#000"
-            rippleTime={0.8}
-            opacity={0.1}
-          />
+          <Ripple ref={this.ripple} color="#000" rippleTime={0.8} opacity={0.1} />
         </Circle>
         {children}
       </Button>
