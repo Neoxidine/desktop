@@ -25,6 +25,12 @@
 
     "watch": false,
     "pretty": true,
-    "importHelpers": true
+    "importHelpers": true,
+
+    "baseUrl": "src",
+    "declaration": false,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "typeRoots": ["node_modules/@types"]
   }
 }
