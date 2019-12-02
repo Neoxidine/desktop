@@ -11,5 +11,10 @@ module.exports = {
   setupFiles: ['<rootDir>/src/setupTests.ts'],
   // coverageReporters: ['text', 'lcov'],
   collectCoverage: true,
-  collectCoverageFrom: ['<rootDir>/src/**/*.{js,jsx,ts,tsx}', '!<rootDir>/node_modules/'],
+  collectCoverageFrom: ['<rootDir>/src/**/*.{js,jsx,ts,tsx}', '!<rootDir>/src/**/', '!<rootDir>/node_modules/'],
+  globals: {
+    'ts-jest': {
+      diagnostics: false,
+    },
+  },
 };
