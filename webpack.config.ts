@@ -76,11 +76,11 @@ const baseConfig: Configuration = {
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
     alias: {
-        '~/renderer': path.resolve(__dirname, 'src', 'renderer'),
-        '~/main': path.resolve(__dirname, 'src', 'main'),
-        '~/preloads': path.resolve(__dirname, 'src', 'preloads'),
-        '~/shared': path.resolve(__dirname, 'src', 'shared'),
-        '~/extensions': path.resolve(__dirname, 'src', 'extensions'),
+        '../../../../renderer': path.resolve(__dirname, 'src', 'renderer'),
+        '../../../../main': path.resolve(__dirname, 'src', 'main'),
+        '../../../../preloads': path.resolve(__dirname, 'src', 'preloads'),
+        '../../../../shared': path.resolve(__dirname, 'src', 'shared'),
+        '../../../../extensions': path.resolve(__dirname, 'src', 'extensions'),
     }
   },
   devtool: 'source-map',
@@ -111,14 +111,16 @@ const baseConfig: Configuration = {
         },
       },
       {
-        test: /\.(ttf|eot|woff|woff2)$/,
-        use: {
-          loader: 'url-loader',
-          options: {
-            name: 'fonts/[name].[ext]',
-          },
-        },
-      },
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              name: "fonts/[name].[ext]",
+            }
+          }
+        ]
+      }
     ],
   },
   externals: [NodeExternals()],

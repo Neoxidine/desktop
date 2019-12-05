@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { platform } from 'os';
-import { centerIcon } from '~/shared/mixins';
+import { centerIcon } from '../../../../shared/mixins';
 import { icons } from '../../constants';
 
 export const StyledNavigationDrawer = styled.div`

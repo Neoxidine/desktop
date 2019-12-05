@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import { Section } from '../Overlay/style';
-import { centerIcon } from '~/shared/mixins';
+import { centerIcon } from '../../../../shared/mixins';
 
 export const Sections = styled.div`
   margin-left: 300px;

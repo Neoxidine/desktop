@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { icons } from '../../constants';
-import { centerIcon } from '~/shared/mixins';
+import { centerIcon } from '../../../../shared/mixins';
 
 export const StyledTabGroups = styled.div`
   display: flex;

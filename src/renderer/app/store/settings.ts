@@ -7,7 +7,7 @@ import { ipcRenderer, remote } from 'electron';
 import { extname, resolve } from 'path';
 import { homedir } from 'os';
 import { icons } from '../constants/icons';
-import { getPath } from '~/shared/utils/paths';
+import { getPath } from '../../../shared/utils/paths';
 import { Engine } from '../models/engine';
 
 const json = require('edit-json-file');

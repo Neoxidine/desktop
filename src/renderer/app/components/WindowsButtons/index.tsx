@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-import { icons } from '~/renderer/app/constants';
+import { icons } from '../../../../renderer/app/constants';
 import { WindowsButton } from '../WindowsButton';
 import {
   minimizeWindow,
   maximizeWindow,
   closeWindow,
   isMaximized,
-} from '~/renderer/app/utils';
+} from '../../../../renderer/app/utils';
 import { Buttons } from './style';
 import { observer } from 'mobx-react';
 import store from '../../store';

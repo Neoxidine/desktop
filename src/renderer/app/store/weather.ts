@@ -1,12 +1,7 @@
-import { observable, observe, action } from 'mobx';
-import * as React from 'react';
+import { observable} from 'mobx';
 
 import store from '.';
-import { ipcRenderer, remote } from 'electron';
-import { extname, resolve } from 'path';
-import { string } from 'prop-types';
-import { checkServerIdentity } from 'tls';
-import console = require('console');
+import { resolve } from 'path';
 import { homedir } from 'os';
 import { FORECAST_KEY } from '../constants'; /* Forecast key is used to fetch the DarkSky API */
 const editJsonFile = require("edit-json-file");

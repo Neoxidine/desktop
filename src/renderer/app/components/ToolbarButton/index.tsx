@@ -1,8 +1,8 @@
 import { observer } from 'mobx-react';
 import * as React from 'react';
 
-import Ripple from '~/renderer/components/Ripple';
-import { transparency } from '~/renderer/constants/transparency';
+import Ripple from '../../../../renderer/components/Ripple';
+import { transparency } from '../../../../renderer/constants/transparency';
 import { Button, Icon, Circle } from './style';
 
 interface Props {

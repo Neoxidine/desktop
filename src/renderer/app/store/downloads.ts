@@ -1,15 +1,13 @@
 import { observable } from 'mobx';
 import { DownloadItem } from '../models/download-item';
 import { ipcRenderer, remote } from 'electron';
-import store from '.';
-import console = require('console');
 import { homedir } from 'os';
 import { resolve } from 'path';
-import { rename } from 'fs';
+// import { rename } from 'fs';
 
 const json = require('edit-json-file');
 let file = json(resolve(homedir()) + '/dot/dot-options.json');
-const app = remote.app;
+// const app = remote.app;
 
 export class DownloadsStore {
   @observable
@@ -43,14 +41,14 @@ export class DownloadsStore {
       i.savePath = resolve(file.get('downloadLocation') + '\\' + i.fileName);
       i.completed = true;
 
-      rename(
-        resolve(app.getPath('temp') + '\\' + i.fileName),
-        resolve(file.get('downloadLocation') + '\\' + i.fileName),
-        function(err) {
-          if (err) {
-          }
-        },
-      );
+      // rename(
+      //   resolve(app.getPath('temp') + '\\' + i.fileName),
+      //   resolve(file.get('downloadLocation') + '\\' + i.fileName),
+      //   function(err) {
+      //     if (err) {
+      //     }
+      //   },
+      // );
     });
   }
 }

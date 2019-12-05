@@ -33,14 +33,14 @@ import Checkbox from '@material-ui/core/Checkbox';
 import { Tiles } from './components/Tiles';
 import { Drawer } from './components/Drawer';
 import { DrawerSeperator } from './components/Drawer/style';
-import Ripple from '~/renderer/components/Ripple';
-import { Circle } from '~/renderer/app/components/ToolbarButton/style';
-import ToolbarButton from '~/renderer/app/components/ToolbarButton';
+import Ripple from '../../../../renderer/components/Ripple';
+import { Circle } from '../../../../renderer/app/components/ToolbarButton/style';
+import ToolbarButton from '../../../../renderer/app/components/ToolbarButton';
 import Skeleton from 'react-skeleton-loader';
 const moment = require('moment');
 import SimpleStorage from 'react-simple-storage';
-import store from '~/renderer/app/store';
-import { icons } from '~/renderer/app/constants';
+import store from '../../../../renderer/app/store';
+import { icons } from '../../../../renderer/app/constants';
 import { createGlobalStyle } from 'styled-components';
 
 const openSettings = () => {

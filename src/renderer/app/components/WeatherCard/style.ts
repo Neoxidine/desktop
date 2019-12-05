@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { centerIcon, overline } from '~/shared/mixins';
+import { centerIcon, overline } from '../../../../shared/mixins';
 import store from '../../store'
 
 

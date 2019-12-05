@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { centerIcon } from '~/shared/mixins';
+import { centerIcon } from '../../../../shared/mixins';
 import { icons } from '../../constants';
 
 export const Remove = styled.div`

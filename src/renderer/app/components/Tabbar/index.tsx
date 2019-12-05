@@ -2,8 +2,8 @@ import { observer } from 'mobx-react';
 import * as React from 'react';
 
 import HorizontalScrollbar from '../HorizontalScrollbar';
-import store from '~/renderer/app/store';
-import { icons } from '~/renderer/app/constants/icons';
+import store from '../../../../renderer/app/store';
+import { icons } from '../../../../renderer/app/constants/icons';
 import { AddTab, StyledTabbar, TabsContainer } from './style';
 import { Tabs } from '../Tabs';
 

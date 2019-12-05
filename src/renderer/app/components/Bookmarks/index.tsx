@@ -2,7 +2,7 @@ import * as React from 'react';
 import { observer } from 'mobx-react';
 
 import store from '../../store';
-import { Button } from '~/renderer/components/Button';
+import { Button } from '../../../../renderer/components/Button';
 import { Sections, BookmarkSection, Input } from './style';
 import BookmarkC from '../Bookmark';
 import { Bookmark } from '../../models/bookmark';
@@ -13,8 +13,8 @@ import { Content, Container, Scrollable, Title } from '../Overlay/style';
 import { SelectionDialog } from '../SelectionDialog';
 import { preventHiding } from '../Overlay';
 import { ListItem, Buttons } from '../Settings/style';
-import { Textfield } from '~/renderer/components/Textfield';
-import { Inputfield } from '~/renderer/components/Input';
+import { Textfield } from '../../../../renderer/components/Textfield';
+import { Inputfield } from '../../../../renderer/components/Input';
 import Dialog from '@material-ui/core/Dialog';
 import { Select } from '@material-ui/core';
 

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { centerIcon, shadows } from '~/shared/mixins';
+import { centerIcon, shadows } from '../../../../shared/mixins';
 
 export const StyledTabGroup = styled.div`
   position: relative;

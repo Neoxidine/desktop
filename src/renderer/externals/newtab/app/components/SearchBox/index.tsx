@@ -6,7 +6,7 @@ import {
   Input,
   HiyaMessage,
 } from './style';
-import store from '~/renderer/app/store';
+import store from '../../../../renderer/app/store';
 import { fetchHiyaMessage } from './../../constants/hiya';
 
 export class SearchBox extends React.Component {

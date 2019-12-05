@@ -1,6 +1,6 @@
 import styled, { css, keyframes } from 'styled-components';
 import { icons } from '../../../constants/icons';
-import { centerIcon } from '~/shared/mixins';
+import { centerIcon } from '../../../../shared/mixins';
 
 export const StyledSearch = styled.div`
   z-index: 2;

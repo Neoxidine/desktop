@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import { Section } from '../Overlay/style';
-import { robotoRegular } from '~/shared/mixins/typography';
+import { robotoRegular } from '../../../../shared/mixins/typography';
 
 export const BookmarkSection = styled(Section)`
   padding: 8px 0px;

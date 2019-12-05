@@ -1,9 +1,9 @@
 import { observer } from 'mobx-react';
 import * as React from 'react';
 
-import store from '~/renderer/app/store';
-import ToolbarButton from '~/renderer/app/components/ToolbarButton';
-import { icons } from '~/renderer/app/constants/icons';
+import store from '../../../../renderer/app/store';
+import ToolbarButton from '../../../../renderer/app/components/ToolbarButton';
+import { icons } from '../../../../renderer/app/constants/icons';
 import { StyledContainer, DotLauncher, DotLauncherWrapper } from './style';
 import { Button } from 'react-native';
 import { resolve } from 'path';

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { observer } from 'mobx-react';
 
 import store from '../../store';
-import { Button } from '~/renderer/components/Button';
+import { Button } from '../../../../renderer/components/Button';
 import { Sections, BookmarkSection } from './style';
 import BookmarkC from '../Bookmark';
 import { Bookmark } from '../../models/bookmark';

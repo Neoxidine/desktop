@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
-import { centerIcon, shadows } from '~/shared/mixins';
+import { centerIcon, shadows } from '../../../../shared/mixins';
 import { icons } from '../../constants';
-import { Button } from '~/renderer/components/Button';
+import { Button } from '../../../../renderer/components/Button';
 import { platform } from 'os';
 
 export const Sections = styled.div`

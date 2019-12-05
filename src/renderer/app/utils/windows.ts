@@ -1,7 +1,6 @@
 import { remote } from 'electron';
 import store from '../store';
 import { resolve } from 'path';
-import console = require('console');
 
 var modal = require('electron-modal');
 

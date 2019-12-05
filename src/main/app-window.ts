@@ -11,17 +11,17 @@ import { resolve, join } from 'path';
 import { platform } from 'os';
 
 import { ViewManager } from './view-manager';
-import { getPath } from '~/shared/utils/paths';
+import { getPath } from '../shared/utils/paths';
 import { existsSync, readFileSync, writeFileSync, appendFile } from 'fs';
-import store from '~/renderer/app/store';
+import store from '../renderer/app/store';
 import console = require('console');
-import { TOOLBAR_HEIGHT } from '~/renderer/app/constants/design';
+import { TOOLBAR_HEIGHT } from '../renderer/app/constants/design';
 import { PermissionDialog } from './permissions';
 import { Omnibox } from './essentials/omnibox';
 const { setup: setupPushReceiver } = require('electron-push-receiver');
 import * as isDev from 'electron-is-dev';
 
-import { DotOptions } from '~/renderer/app/models/dotoptions';
+import { DotOptions } from '../renderer/app/models/dotoptions';
 import { MenuDialog } from './dialogs/menu';
 import { LocationDialog } from './dialogs/location';
 

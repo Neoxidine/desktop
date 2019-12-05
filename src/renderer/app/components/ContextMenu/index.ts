@@ -1,4 +1,4 @@
-import { shadows, centerIcon } from '~/shared/mixins';
+import { shadows, centerIcon } from '../../../../shared/mixins';
 import styled, { css } from 'styled-components';
 
 export const ContextMenu = styled.div`

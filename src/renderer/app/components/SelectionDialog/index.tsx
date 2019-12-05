@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button } from '~/renderer/components/Button';
+import { Button } from '../../../../renderer/components/Button';
 import { StyledSmallDialog, Title } from './style';
 
 type ClickEvent = (e: React.MouseEvent<HTMLDivElement>) => void;

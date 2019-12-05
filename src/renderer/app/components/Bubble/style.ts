@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { caption, centerIcon } from '~/shared/mixins';
+import { caption, centerIcon } from '../../../../shared/mixins';
 
 export const StyledBubble = styled.div`
   border-radius: 5px;

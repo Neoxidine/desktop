@@ -10,9 +10,9 @@ import { format } from 'url';
 import { resolve } from 'path';
 import { promisify } from 'util';
 
-import { getPath } from '~/shared/utils/paths';
+import { getPath } from '../shared/utils/paths';
 import { Extension, StorageArea } from './models';
-import { IpcExtension } from '~/shared/models';
+import { IpcExtension } from '../shared/models';
 import { appWindow } from '.';
 import * as isDev from 'electron-is-dev';
 

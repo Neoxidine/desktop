@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { centerIcon } from '~/shared/mixins';
+import { centerIcon } from '../../../../shared/mixins';
 
 export const Style = css`
   .theme-light {

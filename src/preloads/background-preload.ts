@@ -1,6 +1,6 @@
 import { ipcRenderer, webFrame } from 'electron';
-import { IpcExtension } from '~/shared/models';
-import { getAPI } from '~/shared/utils/extensions';
+import { IpcExtension } from '../shared/models';
+import { getAPI } from '../shared/utils/extensions';
 import { parse } from 'url';
 
 /** @deprecated */

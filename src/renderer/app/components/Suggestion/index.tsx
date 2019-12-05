@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Suggestion } from '../../models';
 import store from '../../store';
 import { icons } from '../../constants';
-import { transparency } from '~/renderer/constants';
+import { transparency } from '../../../../renderer/constants';
 import {
   StyledSuggestion,
   PrimaryText,
@@ -15,7 +15,7 @@ import {
 import console = require('console');
 import { resolve } from 'path';
 import { homedir } from 'os';
-import { isURL } from '~/shared/utils/url';
+import { isURL } from '../../../../shared/utils/url';
 
 interface Props {
   suggestion: Suggestion;

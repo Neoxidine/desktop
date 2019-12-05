@@ -1,6 +1,6 @@
 import { ipcRenderer } from 'electron';
 import { IpcExtension } from '../models';
-import { Port, API } from '~/extensions';
+import { Port, API } from '../../extensions';
 
 export const getAPI = (extension: IpcExtension, tabId: number = null) => {
   const api = new API(extension, tabId);

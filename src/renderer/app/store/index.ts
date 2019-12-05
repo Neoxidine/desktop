@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { observable, computed, action } from 'mobx';
+import { observable } from 'mobx';
 
 import { TabsStore } from './tabs';
 import { TabGroupsStore } from './tab-groups';
 import { AddTabStore } from './add-tab';
-import { ipcRenderer, IpcMessageEvent, remote, app } from 'electron';
+import { ipcRenderer, remote, IpcRendererEvent } from 'electron';
 import { OverlayStore } from './overlay';
 import { HistoryStore } from './history';
 import { FaviconsStore } from './favicons';
@@ -14,10 +14,9 @@ import { NotifsStore } from './notifications';
 import { extname } from 'path';
 import { BookmarksStore } from './bookmarks';
 import { readFileSync, writeFile } from 'fs';
-import { getPath } from '~/shared/utils/paths';
+import { getPath } from '../../../shared/utils/paths';
 import { Settings } from '../models/settings';
-import { SettingsFile } from '~/renderer/app/models/settings';
-import { DotOptions } from '~/renderer/app/models/dotoptions';
+import { DotOptions } from '../../app/models/dotoptions';
 import { DownloadsStore } from './downloads';
 import { LocaleStore } from './locale';
 import { AutofillStore } from './autofill';
@@ -36,7 +35,7 @@ if (!existsSync(getPath('settings.json'))) {
     JSON.stringify({
       dialType: 'top-sites',
       toggleDotLauncher: true,
-    } as SettingsFile),
+    } as Settings),
   );
 }
 
@@ -147,12 +146,12 @@ export class Store {
 
     ipcRenderer.on(
       'update-navigation-state',
-      (e: IpcMessageEvent, data: any) => {
+      (e: IpcRendererEvent, data: any) => {
         this.navigationState = data;
       },
     );
 
-    ipcRenderer.once('visible', (e: IpcMessageEvent, flag: any) => {
+    ipcRenderer.once('visible', (e: IpcRendererEvent, flag: any) => {
       this.quickMenuVisible = flag;
     });
 
@@ -166,7 +165,7 @@ export class Store {
 
     ipcRenderer.on(
       'update-available',
-      (e: IpcMessageEvent, version: string) => {
+      (e: IpcRendererEvent, version: string) => {
         this.updateInfo.version = version;
         this.updateInfo.available = true;
       },
@@ -174,7 +173,7 @@ export class Store {
 
     ipcRenderer.on(
       'url-arguments-applied',
-      (e: IpcMessageEvent, url: string) => {
+      (e: IpcRendererEvent, url: string) => {
         
         this.tabs.addTab({ url, active: true })
         this.overlay.visible = false;
@@ -183,7 +182,7 @@ export class Store {
 
     ipcRenderer.on(
       'api-tabs-query',
-      (e: IpcMessageEvent, webContentsId: number) => {
+      (e: IpcRendererEvent, webContentsId: number) => {
         const sender = remote.webContents.fromId(webContentsId);
 
         sender.send(
@@ -196,7 +195,7 @@ export class Store {
     ipcRenderer.on(
       'api-browserAction-setBadgeText',
       (
-        e: IpcMessageEvent,
+        e: IpcRendererEvent,
         senderId: number,
         extensionId: string,
         details: chrome.browserAction.BadgeTextDetails,

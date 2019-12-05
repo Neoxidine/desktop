@@ -1,7 +1,7 @@
 import Datastore from 'nedb';
 import { observable, computed, action } from 'mobx';
 import { HistoryItem, HistorySection } from '../models';
-import { getPath } from '~/shared/utils/paths';
+import { getPath } from '../../../shared/utils/paths';
 import { countVisitedTimes, compareDates, getSectionLabel } from '../utils';
 
 export type QuickRange =

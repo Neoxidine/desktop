@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { body2, centerIcon } from '~/shared/mixins';
-import { transparency } from '~/renderer/constants';
+import { body2, centerIcon } from '../../../../shared/mixins';
+import { transparency } from '../../../../renderer/constants';
 
 export const StyledSuggestion = styled.div`
   width: 100%;

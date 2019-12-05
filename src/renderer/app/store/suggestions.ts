@@ -2,9 +2,9 @@ import { observable } from 'mobx';
 import { getHistorySuggestions, getSearchSuggestions } from '../utils';
 import store from '.';
 import { icons } from '../constants';
-import { isURL } from '~/shared/utils/url';
+import { isURL } from '../../../shared/utils/url';
 import { Suggestion } from '../models';
-import { platform, homedir } from 'os';
+import { homedir } from 'os';
 import { resolve } from 'path';
 
 const json = require("edit-json-file");

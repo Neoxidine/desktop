@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyledTextfield, Input, Label, Indicator, Icon } from './style';
-import { colors } from '~/renderer/constants';
+import { colors } from '../../../renderer/constants';
 
 export type TestFunction = (str: string) => boolean;
 

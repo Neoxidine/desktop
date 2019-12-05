@@ -1,4 +1,4 @@
-import { transparency } from '~/renderer/constants';
+import { transparency } from '../../../../renderer/constants';
 import styled, { css } from 'styled-components';
 
 export const StyledSuggestions = styled.div`

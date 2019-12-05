@@ -36,7 +36,7 @@ import { icons } from '../../constants';
 import { Menu, MenuItem } from 'nersent-ui';
 import { resolve } from 'path';
 import { platform, homedir } from 'os';
-import { Preloader } from '~/renderer/components/Preloader';
+import { Preloader } from '../../../components/Preloader';
 const json = require('edit-json-file');
 
 import console = require('console');

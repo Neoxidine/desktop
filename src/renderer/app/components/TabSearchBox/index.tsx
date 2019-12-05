@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import store from '../../store';
-import { isURL } from '~/shared/utils/url';
+import { isURL } from '../../../../shared/utils/url';
 import { observer } from 'mobx-react';
 import { StyledSearchBox, InputContainer, SearchIcon, Input } from './style';
 import { Suggestions } from '../Suggestions';
@@ -13,7 +13,7 @@ import { resolve } from 'path';
 import { platform, homedir } from 'os';
 import { Bookmark } from '../../models/bookmark';
 import { appWindow } from '../..';
-import { ViewManager } from '~/main/view-manager';
+import { ViewManager } from '../../../../main/view-manager';
 import { ipcRenderer } from 'electron';
 
 const onClick = (e: React.MouseEvent<HTMLDivElement>) => {

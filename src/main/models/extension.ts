@@ -1,5 +1,5 @@
 import { StorageArea } from '.';
-import { IpcExtension } from '~/shared/models';
+import { IpcExtension } from '../../shared/models';
 
 export interface Extension extends IpcExtension {
   databases?: {

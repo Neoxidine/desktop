@@ -87,6 +87,7 @@
     "electron-rebuild": "^1.8.6",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
     "extract-css-chunks-webpack-plugin": "^4.6.0",
     "file-loader": "^4.2.0",
     "fuse-box": "^4.0.0-next.146",

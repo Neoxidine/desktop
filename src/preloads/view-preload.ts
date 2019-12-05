@@ -1,9 +1,9 @@
 import { ipcRenderer, remote, webFrame, ipcMain } from 'electron';
 import { readFileSync } from 'fs';
 import { join } from 'path';
-import { getAPI } from '~/shared/utils/extensions';
+import { getAPI } from '../shared/utils/extensions';
 import { format, parse } from 'url';
-import { IpcExtension } from '~/shared/models';
+import { IpcExtension } from '../shared/models';
 import { runInThisContext } from 'vm';
 import console = require('console');
 

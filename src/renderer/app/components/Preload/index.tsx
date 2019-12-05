@@ -3,7 +3,7 @@ import { observer } from 'mobx-react';
 
 import store from '../../store';
 import { InputField, Panel } from './style'
-import { Button } from '~/renderer/components/Button';
+import { Button } from '../../../../renderer/components/Button';
 import { Sections, Image, SettingsSection, ListItem, StyledNavigationDrawerItem, NavDILine_Profile, Title, Buttons, A, AboutWrapper } from './style';
 import BookmarkC from '../Bookmark';
 import { Bookmark } from '../../models/bookmark';
@@ -19,7 +19,7 @@ import { platform, homedir } from 'os';
 import { DropArrow } from '../Overlay/style';
 import { appWindow } from '../..';
 import { BrowserView, shell, remote } from 'electron';
-import { ViewManager } from '~/main/view-manager';
+import { ViewManager } from '../../../../main/view-manager';
 import { Snackbar } from '../Snackbar';
 const json = require("edit-json-file");
 

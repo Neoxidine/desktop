@@ -1,24 +1,15 @@
 import { observer } from 'mobx-react';
 import * as React from 'react';
-import { platform } from 'os';
-
-import store from '~/renderer/app/store';
+import store from '../../../app/store';
 import { StyledToolbar, Buttons, Separator, ToolbarWrap } from './style';
 import { NavigationButtons } from '../NavigationButtons';
 import { Tabbar } from '../Tabbar';
 import ToolbarButton from "../ToolbarButton";
 import { icons } from '../../constants';
-import { ipcRenderer, Menu, remote } from 'electron';
+import { ipcRenderer } from 'electron';
 import BrowserAction from '../BrowserAction';
 import { Find } from '../Find';
 import { AbButton } from '../ToolbarButton/style';
-import { ContextMenu, ContextMenuItem } from '../ContextMenu';
-import console = require('console');
-import { TabSearchBox } from '../TabSearchBox';
-import { resolve } from 'path';
-import { tskManager, openDeveloperTools } from '../..';
-
-const modal = require('electron-modal');
 
 const onUpdateClick = () => {
   ipcRenderer.send('update-install');
@@ -43,7 +34,6 @@ class BrowserActions extends React.Component {
   }
 }
 
-const adBlockRef = React.createRef<HTMLDivElement>();
 
 export const toggleAdBlockWindow = () => {
   // if(store.overlay.isAbOpen == false) {
@@ -202,7 +192,7 @@ export const Toolbar = observer(() => {
             />
           </AbButton>
           <Separator />
-          <AbButton title="View more options" onClick={onMoreClick}>
+          <AbButton title="View more options" onClick={() => {onMoreClick}}>
             <BrowserAction
               size={21}
               style={{ marginLeft: 0 }}

@@ -1,6 +1,6 @@
 import Datastore from 'nedb';
 import { observable } from 'mobx';
-import { getPath } from '~/shared/utils/paths';
+import { getPath } from '../../utils/paths';
 import * as React from 'react';
 import { resolve } from 'path';
 import { homedir, platform } from 'os';

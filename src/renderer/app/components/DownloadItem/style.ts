@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { centerIcon } from '~/shared/mixins';
+import { centerIcon } from '../../../../shared/mixins';
 import { icons } from '../../constants';
-import { colors } from '~/renderer/constants';
+import { colors } from '../../../../renderer/constants';
 
 export const StyledItem = styled.div`
   height: 50px;

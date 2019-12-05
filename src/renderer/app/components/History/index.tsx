@@ -4,7 +4,7 @@ import { observer } from 'mobx-react';
 import store from '../../store';
 import HistorySection from '../HistorySection';
 import { QuickRange } from '../../store/history';
-import { Button } from '~/renderer/components/Button';
+import { Button } from '../../../../renderer/components/Button';
 import { Sections, DeletionDialog, DeletionDialogLabel } from './style';
 import { NavigationDrawer } from '../NavigationDrawer';
 import { Content, Container, Scrollable } from '../Overlay/style';

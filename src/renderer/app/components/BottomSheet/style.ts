@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { shadows } from '~/shared/mixins';
+import { shadows } from '../../../../shared/mixins';
 
 export const StyledBottomSheet = styled.div`
   position: absolute;

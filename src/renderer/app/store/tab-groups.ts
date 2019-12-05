@@ -1,12 +1,11 @@
 import { observable, computed, action } from 'mobx';
 
 import Datastore from 'nedb';
-import { TabGroup } from '~/renderer/app/models';
+import { TabGroup } from '../../app/models';
 import store from '.';
-import { ipcRenderer, remote } from 'electron';
-import { colors } from '~/renderer/constants';
-import { closeWindow } from '../utils';
-import { getPath } from '~/shared/utils/paths';
+import { ipcRenderer  } from 'electron';
+import { colors } from '../../constants';
+import { getPath } from '../../../shared/utils/paths';
 
 export class TabGroupsStore {
 

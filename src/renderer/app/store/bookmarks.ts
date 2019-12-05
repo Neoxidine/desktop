@@ -1,6 +1,6 @@
 import Datastore from 'nedb';
 import { observable, computed, action } from 'mobx';
-import { getPath } from '~/shared/utils/paths';
+import { getPath } from '../../../shared/utils/paths';
 import { Bookmark } from '../models/bookmark';
 import console = require('console');
 

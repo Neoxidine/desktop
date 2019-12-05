@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { transparency } from '~/renderer/constants';
+import { transparency } from '../../../../renderer/constants';
 
 export const Line = styled.div`
   background-color: var(--line-color);

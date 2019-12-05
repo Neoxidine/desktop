@@ -1,10 +1,5 @@
-import { ipcRenderer, remote, screen } from 'electron';
-import { observable, action } from 'mobx';
-import { defaultNotifOptions, TOOLBAR_HEIGHT } from '../constants'
-import { resolve } from 'path';
-import store from '.';
-import { appWindow } from '..';
-var modal = require('electron-modal');
+import { action } from 'mobx';
+import { defaultNotifOptions } from '../constants/notifications'
 
 export class NotifsStore {
 

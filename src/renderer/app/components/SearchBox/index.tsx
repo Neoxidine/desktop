@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import store from '../../store';
-import { isURL } from '~/shared/utils/url';
+import { isURL } from '../../../../shared/utils/url';
 import { observer } from 'mobx-react';
 import {
   StyledSearchBox,
