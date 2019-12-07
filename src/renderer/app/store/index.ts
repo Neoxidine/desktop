@@ -26,7 +26,6 @@ import { WeatherStore } from './weather';
 import { NewsStore } from './news';
 import { UserStore } from './user';
 import { existsSync, writeFileSync } from 'fs';
-import * as isDev from 'electron-is-dev';
 import console = require('console');
 
 if (!existsSync(getPath('settings.json'))) {
@@ -232,8 +231,8 @@ export class Store {
     ipcRenderer.send('update-check');
 
     requestAnimationFrame(() => {
-      if (remote.process.argv.length > 1 && isDev == false) {
-        const path = remote.process.argv[1];
+      if (remote.process.argv.length > 1) {
+        const path = "test"//remote.process.argv[1];
         const ext = extname(path);
 
         if (ext === '.html') {

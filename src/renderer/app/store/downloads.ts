@@ -1,6 +1,6 @@
 import { observable } from 'mobx';
 import { DownloadItem } from '../models/download-item';
-import { ipcRenderer, remote } from 'electron';
+import { ipcRenderer } from 'electron';
 import { homedir } from 'os';
 import { resolve } from 'path';
 // import { rename } from 'fs';
